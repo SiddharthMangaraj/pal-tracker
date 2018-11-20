@@ -17,6 +17,9 @@ jobs:
       addons:
         mariadb: '10.2'
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> d921f90... Add task for migrating databases
+=======
 >>>>>>> d921f90... Add task for migrating databases
 =======
 >>>>>>> d921f90... Add task for migrating databases
