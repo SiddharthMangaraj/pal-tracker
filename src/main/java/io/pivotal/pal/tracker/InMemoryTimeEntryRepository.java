@@ -22,13 +22,13 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository  {
         return timeEntry;
 
     }
-    public TimeEntry find(long timeEntryId){
+    public TimeEntry find(Long timeEntryId){
         return timeEntryMap.get(timeEntryId);
     }
     public List<TimeEntry> list(){
         return new ArrayList< TimeEntry>(timeEntryMap.values());
     }
-    public TimeEntry update(long timeEntryId,TimeEntry timeEntry){
+    public TimeEntry update(Long timeEntryId,TimeEntry timeEntry){
         TimeEntry timeEntry1=timeEntryMap.get(timeEntryId);
         if(timeEntry1!=null) {
             timeEntry1.setProjectId(timeEntry.getProjectId());
@@ -42,7 +42,7 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository  {
             return null;
         }
     }
-    public void delete(long timeEntryId){
+    public void delete(Long timeEntryId){
         timeEntryMap.remove(timeEntryId);
 
     }
